@@ -15,9 +15,9 @@ public class DrawPolygons extends JComponent{
     public DrawPolygons(){
         polygons = new ArrayList<>(10);
 
-        polygons.add(new Square(50,50));
-        polygons.add(new Triangle(100,100));
-        polygons.add(new Rectangle(50,150));
+        polygons.add(PolygonFactory.createSquare(50,50));
+        polygons.add(PolygonFactory.createTriangle(100,100));
+        polygons.add(PolygonFactory.createRectangle(50,150));
 
     }//constructor
 
